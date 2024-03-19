@@ -41,6 +41,18 @@ public class Evento {
         return tipoEvento;
     }
 
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dataEvento=" + dataEvento +
+                ", descrizione='" + descrizione + '\'' +
+                ", tipoEvento=" + tipoEvento +
+                ", numeroMassimoPartecipanti=" + numeroMassimoPartecipanti +
+                '}';
+    }
+
     public int getNumeroMassimoPartecipanti() {
         return numeroMassimoPartecipanti;
     }

@@ -18,7 +18,7 @@ public class EventoDAO {
         transaction.begin();
         em.persist(evento);
         transaction.commit();
-        System.out.println("Evento" + evento.getNome() + "salvato con successo!");
+        System.out.println("Evento" + evento.getNome() + " salvato con successo!");
     }
 
     public Evento getById(int id) throws EventNotFoundException {
@@ -35,6 +35,6 @@ public class EventoDAO {
         transaction.begin();
         em.remove(evento);
         transaction.commit();
-        System.out.println("Evento" + evento.getNome() + "eliminato con successo!");
+        System.out.println("Evento" + evento.getNome() + " eliminato con successo!");
     }
 }
